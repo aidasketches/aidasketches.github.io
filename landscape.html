@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Landscape</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
+
+	<!-- Font Awesome icons (down arrow for dropdown button) -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/stil.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<div class="clearfix" id="header">
+		<div id="first">
+			<a href="index.html" id="brand" title="What a Wonderful World">What a Wonderful World <i class="fas fa-globe-africa"></i></a>
+			
+			<a href="#" id="toggle" onclick="showHideId('second')"><i class="fas fa-bars"></i></a>
+		</div>
+
+		<div id="second" class="hideWhenSmallerScreen">
+			<div>
+				<a onclick="showHideId('dc1','dc2');" href="#">About <i class="fas fa-angle-down"></i></a>
+				<div id="dc1" class="hideWhenSmallerScreen hide2">
+					<a href="ourvalues.html">Our Values</a>
+					<a href="whatwedo.html">What We Do</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+				
+			<div>
+				<a onclick="showHideId('dc2','dc1');" href="#">Gallery <i class="fas fa-angle-down"></i></a>
+				<div id="dc2" class="hideWhenSmallerScreen hide2">
+					<a href="landscape.html">Landscape</a>
+					<a href="macro.html">Macro</a>
+					<a href="portrait.html">Portrait</a>
+				</div>
+			</div>				
+			<a href="artists.html">Artists</a>
+			<a id="login" href="login.html">Log In</a>
+		</div>	
+	</div>
+
+	<div class="maindiv" onclick="hideDropdowns()">	
+		<p >Landscape photography here...</p>	
+	</div>
+
+	<script src="js/skript.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+body{
+	background: fixed no-repeat url(https://images.unsplash.com/photo-1506642328232-1ea4d3b6ba6f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d3f6516fdad9709738200ea5727d5cf6&auto=format&fit=crop&w=1500&q=80);
+	background-size: cover;
+	max-width: 100vw;
+	overflow-x:hidden;
+	height:auto;
+	background-position:center;			
+}
+
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Voces', cursive;
+	box-sizing:border-box;
+	color:#ffeaeb;
+}
+
+*:hover{
+	-webkit-transition-duration: 0.4s;  /*Safari*/
+    transition-duration: 0.4s;
+}
+
+#header{
+	width:100%;
+	background-color:#ff8084;
+}
+
+div#first{
+	display:block;
+	float:left;
+	width:35%;
+	height:100%;
+	font-size: 1.5rem;
+}
+
+div#second{
+	display:block;
+	float:left;
+	width:65%;
+	height:100%;
+	font-size: 1.1rem;	
+
+}
+
+a{					
+	display:block;
+	width:100%;
+	height: 100%;
+	text-decoration:none;
+	line-height:8vh;
+	text-align:center;
+	z-index: 100;
+}
+
+div#second div div{
+	background-color: #ffeaeb;
+	border-radius: 5px;
+}
+div#second div, div#second a{
+	width:100%;
+	float:left;
+}
+div#second div div{
+	display:none;
+}
+div#second div div a{
+	color:#ea6266;
+}
+div#first a:hover{
+	font-size:1.45rem;
+}
+div#second a:hover{
+	font-weight: bold;
+	font-size:1.2rem;
+}
+
+a#brand{
+	width:100%;
+	float:left;
+}
+a#brand>img{		/*Ikonica unutar linka brand*/
+	display:inline;
+	width:30px;
+	height:30px;
+	vertical-align: middle;
+}
+a#toggle{
+	text-align:center;
+	display:none;
+	float:left;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.main{
+	display:block;
+	float:none;
+	max-width:100vw;
+	padding-top:30vh;
+	height: 92vh;
+	text-align:center;
+}
+
+.title{
+	font-size:3.4em;
+}
+
+.subtitle{
+	font-size:2em;
+	margin-top:10px;	
+}
+
+hr{
+	width:38em;
+	margin:auto;
+	margin-top:1em;
+}
+
+button {
+    background-color: Transparent;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #ffeaeb;
+    border-radius: 30px;
+    color: #ffeaeb;
+    display: block;
+    font-size: 1.5em;
+    margin: 1em auto;
+    padding: 8px 30px;
+}
+button:hover{
+    background-color: #ff8084;
+}
+button#join:active, button#join:focus{
+	outline:none;
+}
+
+/* Login Form style */
+input[type=text], input[type=password] {
+	color:black;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+	border-radius: 0;
+	width:100%;
+}
+label{
+	display:block;
+	padding:10px;
+	text-align: left;
+}
+
+/* Additional style for all pages but homepage. (2)*/
+.maindiv{			/* Main container style. */
+	min-height:92vh;
+	z-index:-1;
+	padding:20px;
+}
+div.centered{
+	width:50%;
+	margin:auto;
+	margin-top: 25vh;
+}
+div.artist{
+	position:relative;
+	z-index:-1;
+	padding:2%;
+	display:inline-block;
+	width:33%;
+	border:1px solid #ffeaeb;
+	border-radius:5px;
+}
+
+p.par-50{			/* Pararaph style. */
+	width:50%;
+}
+
+img.gallery{		/* Image in gallery style. */
+	display:inline-block;
+	vertical-align:top;
+	width:50%;
+	padding:1vw;
+	border-radius:1.5vw;
+	text-align:top;
+	height:auto;
+}
+/***********************************************(2)*/
+
+::selection {
+	background: blueviolet; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: blueviolet; /* Gecko Browsers */
+}
+
+/* Different screen size styles. */
+/*********************************************************(3)*/
+@media only screen and (min-width: 1024px) {
+	.header{
+		max-height:8vh;
+	}
+
+	div#second {
+		max-width:720px;
+		float:right;
+		font-size:1.15rem;
+	}
+	div#second a:hover{
+		font-size:1.3rem;
+	}
+	div#second>a, div#second>div{
+		width:25%;
+	}	
+}
+
+@media only screen and (min-width: 580px) {
+	div#second{
+		max-height:8vh;	
+	}
+			
+	div#second>a, div#second>div{
+		width:25%;
+	}	
+}
+
+@media only screen and (max-width: 1024px) {
+	.header{
+		max-height:16vh;
+	}
+    hr{
+    	min-width:34em;
+		max-width: 90vw;
+    }
+
+    img.gallery{
+	width:49.5%;
+	}
+
+    .main{
+    	padding-left:3vw;
+    	padding-right:3vw;
+    }
+
+    div#first{
+    	width:100%;
+    }
+
+    div#second{
+    	width:100%;
+    	display:none;
+    	border-top: 1px solid #ffeaeb;
+    }
+
+    a#brand{
+		max-width:88%;
+	}
+
+    a#toggle{
+    	display:block;
+    	max-width:12%;   
+ 	}
+
+    .title{
+		font-size:3em;
+	}
+
+	.subtitle{
+		font-size:1.8em;
+		margin-top:5px;	
+	}
+
+	button#join {
+    	font-size: 1.6rem;
+    	margin: 20px auto;
+    	padding: 5px 25px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.header{
+		max-height:100%;
+	}
+
+	img.gallery{
+	width:99%;
+	}
+
+	hr{
+	   	max-width:80vw;
+    	min-width: 90vw;
+    }
+
+    a#brand{
+    	max-width:84%;
+    }
+
+    a#toggle{
+    	display:block;
+    	max-width:16%;	
+    }
+
+    div#first{
+    	font-size: 5.1vw;
+    }
+    div#first a:hover{
+    	font-size:5.3vw;
+    }
+
+    div#second div, div#second a{
+ 		width:100%;
+ 	}
+
+    .title{
+		font-size:8vw;
+	}
+
+	.subtitle{
+		font-size:5.2vw;
+		margin-top:5px;	
+	}
+
+	button#join {
+    	font-size: 4.5vw;
+    	margin-top: 20px;
+    	padding: 7px 20px;
+	}
+}
+/********************************************************(3)*/
