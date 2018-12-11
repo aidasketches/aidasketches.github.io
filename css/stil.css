@@ -227,7 +227,7 @@ img.gallery{		/* Image in gallery style. */
 	}	
 }
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 650px) {
 	div#second{
 		max-height:8vh;	
 	}
@@ -290,7 +290,7 @@ img.gallery{		/* Image in gallery style. */
 	}
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 650px) {
 	.header{
 		max-height:100%;
 	}
