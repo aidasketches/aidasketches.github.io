@@ -168,19 +168,19 @@ label{
 	padding-left:2vw;
 }
 div.centered{
-	width:50%;
+	width:450px;
 	margin:auto;
 	margin-top: 25vh;
 }
 div.artist{
 	display:inline-block;
-	float:left;
+	vertical-align:top;
 	position:relative;
 	z-index:-1;
 	padding:1vw;
 	margin:1vw;
 	display:inline-block;
-	width:31%;
+	width:30.5%;
 	border:1px solid #ffeaeb;
 	border-radius:5px;
 }
@@ -318,10 +318,10 @@ img.gallery{		/* Image in gallery style. */
     }
 
     div#first{
-    	font-size: 5.1vw;
+    	font-size: 1.3rem;
     }
     div#first a:hover{
-    	font-size:5.3vw;
+    	font-size:1.2rem;
     }
 
     div#second div, div#second a{
@@ -329,16 +329,16 @@ img.gallery{		/* Image in gallery style. */
  	}
 
     .title{
-		font-size:8vw;
+		font-size:1.8rem;
 	}
 
 	.subtitle{
-		font-size:5.2vw;
+		font-size:1.3rem;
 		margin-top:5px;	
 	}
 
 	button#join {
-    	font-size: 4.5vw;
+    	font-size: 1.2rem;
     	margin-top: 20px;
     	padding: 7px 20px;
 	}
