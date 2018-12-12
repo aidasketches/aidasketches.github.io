@@ -26,7 +26,7 @@ p{
     transition-duration: 0.4s;
 }
 
-#header{
+nav{
 	width:100%;
 	background-color:#ff8084;
 
@@ -107,7 +107,7 @@ a#toggle{
 	display: table;
 }
 
-.main{
+main{
 	display:block;
 	float:none;
 	max-width:100vw;
@@ -237,7 +237,7 @@ img.gallery{		/* Image in gallery style. */
 	div#second>a, div#second>div{
 		width:25%;
 	}
-	#header{
+	nav{
 		height:50px;
 	}	
 }
@@ -261,7 +261,7 @@ img.gallery{		/* Image in gallery style. */
 		width:46.5%;
 	}
 
-    .main{
+    main{
     	padding-left:3vw;
     	padding-right:3vw;
     }

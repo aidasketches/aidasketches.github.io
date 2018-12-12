@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<div class="clearfix" id="header">
+	<nav class="clearfix">
 		<div id="first">
 			<a href="index.html" id="brand" title="What a Wonderful World">What a Wonderful World <i class="fas fa-globe-africa"></i></a>
 			
@@ -43,32 +43,32 @@
 			<a href="artists.html">Artists</a>
 			<a id="login" href="login.html">Log In</a>
 		</div>	
-	</div>
+	</nav>
 
-	<div class="maindiv" onclick="hideDropdowns()">
-		  	<div class="signup centered">
-		  		<form action="/action_page.php" >
+	<main class="maindiv" onclick="hideDropdowns()">
+		<div class="signup centered">
+		    <form action="/action_page.php" >
 
-		  		<label for="uname">Your Full Name:</label>
-		    	<input  type="text" placeholder="Enter Your Full Name" name="uname" required>
+		  	<label for="uname">Your Full Name:</label>
+		    <input  type="text" placeholder="Enter Your Full Name" name="uname" required>
 
-		    	<label for="uname">Your Email:</label>
-		    	<input  type="email" placeholder="Enter Your Email Address" name="uname" required>
+		    <label for="uname">Your Email:</label>
+		    <input  type="email" placeholder="Enter Your Email Address" name="uname" required>
 
-		    	<div>
-		    		<label for="uname">Username:</label>
-		    		<input  type="text" placeholder="Enter Username" name="uname" required>
-		    	</div>
+		    <div>
+		    	<label for="uname">Username:</label>
+		    	<input  type="text" placeholder="Enter Username" name="uname" required>
+		    </div>
 
-		    	<div>
-		    		<label for="psw">Password:</label>
-		    		<input type="password" placeholder="Enter Password" name="psw" required>
-		    	</div>
+		    <div>
+		    	<label for="psw">Password:</label>
+		    	<input type="password" placeholder="Enter Password" name="psw" required>
+		    </div>
 		        
-		    	<button type="submit">Sign Up</button>
-		    	</form>
-		  	</div>
-	</div>
+		    <button type="submit">Sign Up</button>
+		    </form>
+		</div>
+	</main>
 
 	<script src="js/skript.js"></script> 
 
