@@ -2,7 +2,7 @@ body{
 	background: fixed no-repeat url(https://images.unsplash.com/photo-1506642328232-1ea4d3b6ba6f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d3f6516fdad9709738200ea5727d5cf6&auto=format&fit=crop&w=1500&q=80);
 	background-size: cover;
 	max-width: 100vw;
-	overflow-x:hidden;
+	
 	height:100%;
 	background-position:center;			
 }
@@ -30,6 +30,40 @@ nav{
 	width:100%;
 	background-color:#ff8084;
 
+}
+header{
+	height:200px;
+	line-height:200px;
+	border:1px solid #ffeaeb;
+	border-radius:5px;
+	text-align: center;
+	margin-bottom:1%;
+}
+.mainhome{			/* Main container style in home page. */
+	display:block;
+	float:none;
+	max-width:100%;
+	padding-top:30vh;
+	min-height: 92vh;
+	text-align:center;
+}
+.mainsec{			/* Main container style in secondary pages. */
+	min-height:92vh;
+	z-index:-1;
+	padding:1%;
+	overflow:visible;
+}
+div.artist{
+	display:inline-block;
+	vertical-align:top;
+	text-align:center;
+	position:relative;
+	z-index:-1;
+	padding:1%;
+	margin:0.5%;
+	width:32%;
+	border:1px solid #ffeaeb;
+	border-radius:5px;
 }
 
 div#first{
@@ -107,15 +141,6 @@ a#toggle{
 	display: table;
 }
 
-main{
-	display:block;
-	float:none;
-	max-width:100vw;
-	padding-top:30vh;
-	max-height: 92vh;
-	text-align:center;
-}
-
 .title{
 	font-size:3.4em;
 }
@@ -172,13 +197,6 @@ label{
 }
 
 /* Additional style for all pages but homepage. (2)*/
-.maindiv{			/* Main container style. */
-	max-height:92vh;
-	z-index:-1;
-	padding-top:2vw;
-	padding-left:2vw;
-	height:100%;
-}
 div.centered{
 	width:450px;
 	margin:auto;
@@ -188,21 +206,6 @@ div.centered{
 	display:inline-block;
 	padding:0 5px;
 	width:49%;
-}
-div.artist{
-	display:inline-block;
-	vertical-align:top;
-	position:relative;
-	z-index:-1;
-	padding:3vw 2vw;
-	margin:5px;
-	display:inline-block;
-	width:30.5%;
-	border:1px solid #ffeaeb;
-	border-radius:5px;
-}
-.maindiv h1{
-	text-indent:1vw;
 }
 
 img.gallery{		/* Image in gallery style. */
@@ -258,10 +261,10 @@ img.gallery{		/* Image in gallery style. */
     }
 
 	div.artist{
-		width:46.5%;
+		width:48.5%;
 	}
 
-    main{
+    .mainhome{
     	padding-left:3vw;
     	padding-right:3vw;
     }
@@ -303,7 +306,7 @@ img.gallery{		/* Image in gallery style. */
 
 @media only screen and (max-width: 750px) {
 	div.artist{
-		width:95%;
+		width:99%;
 	}
 
 	div.centered{
