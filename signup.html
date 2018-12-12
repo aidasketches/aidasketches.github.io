@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Landscape</title>
+	<title>Sign Up</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
 
@@ -33,22 +33,36 @@
 					<a href="contact.html">Contact</a>
 				</div>
 			</div>
-				
-			<div>
-				<a onclick="showHideId('dc2','dc1');" href="#">Gallery <i class="fas fa-angle-down"></i></a>
-				<div id="dc2" class="hideWhenSmallerScreen hide2">
-					<a href="landscape.html">Landscape</a>
-					<a href="macro.html">Macro</a>
-					<a href="portrait.html">Portrait</a>
-				</div>
-			</div>				
+							
 			<a href="artists.html">Artists</a>
+			<a href="stories.html">Stories</a>
 			<a id="login" href="login.html">Log In</a>
 		</div>	
 	</div>
 
-	<div class="maindiv" onclick="hideDropdowns()">	
-		<p >Landscape photography here...</p>	
+	<div class="maindiv" onclick="hideDropdowns()">
+		  	<div class="signup centered">
+		  		<form action="/action_page.php" >
+
+		  		<label for="uname">Your Full Name:</label>
+		    	<input  type="text" placeholder="Enter Your Full Name" name="uname" required>
+
+		    	<label for="uname">Your Email:</label>
+		    	<input  type="email" placeholder="Enter Your Email Address" name="uname" required>
+
+		    	<div>
+		    		<label for="uname">Username:</label>
+		    		<input  type="text" placeholder="Enter Username" name="uname" required>
+		    	</div>
+
+		    	<div>
+		    		<label for="psw">Password:</label>
+		    		<input type="password" placeholder="Enter Password" name="psw" required>
+		    	</div>
+		        
+		    	<button type="submit">Sign Up</button>
+		    	</form>
+		  	</div>
 	</div>
 
 	<script src="js/skript.js"></script> 

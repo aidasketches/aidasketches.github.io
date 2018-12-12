@@ -17,6 +17,10 @@ html{
 	box-sizing:border-box;
 	color:#ffeaeb;
 }
+p{
+	font-size:1.4em;
+}
+
 
 *:hover{
 	-webkit-transition-duration: 0.4s;  /*Safari*/
@@ -144,7 +148,7 @@ button#join:active, button#join:focus{
 }
 
 /* Login Form style */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
 	color:black;
     width: 100%;
     padding: 12px 20px;
@@ -170,28 +174,32 @@ label{
 	z-index:-1;
 	padding-top:2vw;
 	padding-left:2vw;
+	height:100%;
 }
 div.centered{
 	width:450px;
 	margin:auto;
-	margin-top: 20vh;
-
+	margin-top: 18vh;
+}
+.signup div{
+	display:inline-block;
+	padding:0 5px;
+	width:49%;
 }
 div.artist{
 	display:inline-block;
 	vertical-align:top;
 	position:relative;
 	z-index:-1;
-	padding:1vw;
+	padding:3vw 2vw;
 	margin:1vw;
 	display:inline-block;
 	width:30.5%;
 	border:1px solid #ffeaeb;
 	border-radius:5px;
 }
-
-p.par-50{			/* Pararaph style. */
-	width:50%;
+.maindiv h1{
+	text-indent:1vw;
 }
 
 img.gallery{		/* Image in gallery style. */

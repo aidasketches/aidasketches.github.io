@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<title>Portrait</title>
+	<title>Stories</title>
+
+	<link rel="stylesheet" type="text/css" href="css/stil.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Voces" rel="stylesheet">
 
 	<!-- Font Awesome icons (down arrow for dropdown button) -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="css/stil.css">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta charset="UTF-8">
 </head>
-
 <body>
 	<div class="clearfix" id="header">
 		<div id="first">
@@ -33,24 +28,30 @@
 					<a href="contact.html">Contact</a>
 				</div>
 			</div>
-				
-			<div>
-				<a onclick="showHideId('dc2','dc1');" href="#">Gallery <i class="fas fa-angle-down"></i></a>
-				<div id="dc2" class="hideWhenSmallerScreen hide2">
-					<a href="landscape.html">Landscape</a>
-					<a href="macro.html">Macro</a>
-					<a href="portrait.html">Portrait</a>
-				</div>
-			</div>				
+							
 			<a href="artists.html">Artists</a>
+			<a href="stories.html">Stories</a>
 			<a id="login" href="login.html">Log In</a>
 		</div>	
 	</div>
 
-	<div class="maindiv" onclick="hideDropdowns()">	
-		<p>Portrait photography here...</p>	
-	</div>
+	<div class="maindiv" onclick="hideDropdowns()">
+		<br>
+		<h1>Customer Reviews:</h1>
+		<br>
+		<div class="artist">
+			<h3>John Doe</h3>
+			<br>
+		    <p>If you want responsible partner to give you a high quality service, don't wait to contact What A Wonderful World.</p>
+		</div>
 
+		<div class="artist">
+			<h3>Anna Smith</h3>
+			<br>
+		    <p>When I first heard about this, I have to say i wasn't expecting a lot. I am glad i was wrong. We are more than satisfied with their services. I recommend!</p>
+		</div>	    
+	</div>
+	
 	<script src="js/skript.js"></script> 
 
 </body>
