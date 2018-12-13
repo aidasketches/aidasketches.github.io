@@ -37,7 +37,7 @@ header{
 	border:1px solid #ffeaeb;
 	border-radius:5px;
 	text-align: center;
-	margin-bottom:1%;
+	margin:10px;
 }
 .mainhome{			/* Main container style in home page. */
 	display:block;
@@ -50,8 +50,8 @@ header{
 .mainsec{			/* Main container style in secondary pages. */
 	min-height:92vh;
 	z-index:-1;
-	padding:1%;
 	overflow:visible;
+	padding:10px;
 }
 div.artist{
 	display:inline-block;
@@ -60,8 +60,8 @@ div.artist{
 	position:relative;
 	z-index:-1;
 	padding:1%;
-	margin:0.5%;
-	width:32%;
+	margin:10px;
+	width:calc(33% - 20px);
 	border:1px solid #ffeaeb;
 	border-radius:5px;
 }
@@ -185,7 +185,6 @@ input[type=text], input[type=password], input[type=email] {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
 form button {
 	border-radius: 0;
 	width:100%;
@@ -261,7 +260,7 @@ img.gallery{		/* Image in gallery style. */
     }
 
 	div.artist{
-		width:48.5%;
+		width:calc(49.5% - 20px);
 	}
 
     .mainhome{
@@ -306,7 +305,7 @@ img.gallery{		/* Image in gallery style. */
 
 @media only screen and (max-width: 750px) {
 	div.artist{
-		width:99%;
+		width:calc(100% - 20px);
 	}
 
 	div.centered{
