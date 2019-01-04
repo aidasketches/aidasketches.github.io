@@ -19,15 +19,15 @@
 <body>
 	<nav class="clearfix">
 		<div id="first">
-			<a href="index.html" id="brand" title="What a Wonderful World">What a Wonderful World <i class="fas fa-globe-africa"></i></a>
+			<a id="brand" href="index.html" title="What a Wonderful World">What a Wonderful World <i class="fas fa-globe-africa"></i></a>
 			
-			<a href="#" id="toggle" onclick="showHideId('second')"><i class="fas fa-bars"></i></a>
+			<a id="toggle" href="#" onclick="showHideId('second')"><i class="fas fa-bars"></i></a>
 		</div>
 
 		<div id="second" class="hideWhenSmallerScreen">
 			<div>
 				<a onclick="showHideId('dc1','dc2');" href="#">About <i class="fas fa-angle-down"></i></a>
-				<div id="dc1" class="hideWhenSmallerScreen hide2">
+				<div id="dc1" class="dropdown hideWhenSmallerScreen">
 					<a href="ourvalues.html">Our Values</a>
 					<a href="whatwedo.html">What We Do</a>
 					<a href="contact.html">Contact</a>
@@ -35,14 +35,14 @@
 			</div>
 			<div>
 				<a onclick="showHideId('dc2','dc1');" href="#">Stories <i class="fas fa-angle-down"></i></a>
-				<div id="dc2" class="hideWhenSmallerScreen hide2">
+				<div id="dc2" class="dropdown hideWhenSmallerScreen">
 					<a href="stories.html">Customers</a>
 					<a href="fund.html">Fund</a>
 				</div>
 			</div>				
 			<a href="artists.html">Artists</a>
 			<a id="login" href="login.html">Log In</a>
-		</div>
+		</div>	
 	</nav>
 
 	<main class="mainsec" onclick="hideDropdowns()">

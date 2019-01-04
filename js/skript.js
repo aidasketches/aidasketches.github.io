@@ -1,4 +1,4 @@
-/* This function shows and hides x alternately*/
+﻿/* This function shows and hides x alternately*/
 function showHideId(x,y){
 	var p = document.getElementById(x);
 	var q = document.getElementById(y);
@@ -20,11 +20,11 @@ function hideDropdowns(){
 	function hideWhenSmallerScreen(){
 		var z=document.getElementById("second");
 		if (x.matches){
-			hideClass("hide2");
+			hideClass("dropdown");
 			z.style.display="none";
 		}
 		else{
-			hideClass("hide2");
+			hideClass("dropdown");
 			z.style.display="block";
 		}	
 	}
