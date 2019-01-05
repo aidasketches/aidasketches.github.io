@@ -41,8 +41,6 @@ header{
 }
 .mainhome{			/* Main container style in home page. */
 	padding-top:30vh;
-	display:flex;
-	flex-wrap:wrap;
 }
 .mainsec{			/* Main container style in secondary pages. */
 	padding:10px;
@@ -277,6 +275,21 @@ img.gallery{			/* Gallery image style. */
 }
 
 @media only screen and (max-width: 650px) {
+	.mainhome{			/* Main container style in home page. */
+		padding-top:25vh;
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	a#brand{
+		max-width:85%;
+	}
+
+    a#toggle{
+    	display:block;
+    	max-width:15%;   
+ 	}
+
 	div#second{
 		height:auto;
 	}
