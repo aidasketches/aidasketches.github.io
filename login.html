@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<nav class="clearfix">
+	<nav>
 		<div id="first">
 			<a id="brand" href="index.html" title="What a Wonderful World">What a Wonderful World <i class="fas fa-globe-africa"></i></a>
 			
@@ -25,7 +25,7 @@
 		</div>
 
 		<div id="second" class="hideWhenSmallerScreen">
-			<div>
+			<div class="insecond">
 				<a onclick="showHideId('dc1','dc2');" href="#">About <i class="fas fa-angle-down"></i></a>
 				<div id="dc1" class="dropdown hideWhenSmallerScreen">
 					<a href="ourvalues.html">Our Values</a>
@@ -33,15 +33,15 @@
 					<a href="contact.html">Contact</a>
 				</div>
 			</div>
-			<div>
+			<div class="insecond">
 				<a onclick="showHideId('dc2','dc1');" href="#">Stories <i class="fas fa-angle-down"></i></a>
 				<div id="dc2" class="dropdown hideWhenSmallerScreen">
 					<a href="stories.html">Customers</a>
 					<a href="fund.html">Fund</a>
 				</div>
 			</div>				
-			<a href="artists.html">Artists</a>
-			<a id="login" href="login.html">Log In</a>
+			<a class="insecond" href="artists.html">Artists</a>
+			<a class="insecond" href="login.html">Log In</a>
 		</div>	
 	</nav>
 

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<nav class="clearfix">
+	<nav>
 		<div id="first">
 			<a id="brand" href="index.html" title="What a Wonderful World">What a Wonderful World <i class="fas fa-globe-africa"></i></a>
 			
@@ -25,23 +25,23 @@
 		</div>
 
 		<div id="second" class="hideWhenSmallerScreen">
-			<div>
-				<a onclick="showHideId('dc1','dc2');" href="#">About <i class="fas fa-angle-down"></i></a>
+			<div class="insecond">
+				<a id="ac1" onclick="showHideId('dc1','dc2');" href="#">About <i class="fas fa-angle-down"></i></a>
 				<div id="dc1" class="dropdown hideWhenSmallerScreen">
 					<a href="ourvalues.html">Our Values</a>
 					<a href="whatwedo.html">What We Do</a>
 					<a href="contact.html">Contact</a>
 				</div>
 			</div>
-			<div>
-				<a onclick="showHideId('dc2','dc1');" href="#">Stories <i class="fas fa-angle-down"></i></a>
+			<div class="insecond">
+				<a id="ac2" onclick="showHideId('dc2','dc1');" href="#">Stories <i class="fas fa-angle-down"></i></a>
 				<div id="dc2" class="dropdown hideWhenSmallerScreen">
 					<a href="stories.html">Customers</a>
 					<a href="fund.html">Fund</a>
 				</div>
 			</div>				
-			<a href="artists.html">Artists</a>
-			<a id="login" href="login.html">Log In</a>
+			<a class="insecond" href="artists.html">Artists</a>
+			<a class="insecond" href="login.html">Log In</a>
 		</div>	
 	</nav>
 
@@ -49,7 +49,7 @@
 		<p class="title">What a Wonderful World</p>
 		<p class="subtitle">The easy way to find the best photography for your business</p>
 		<hr>
-		<a href="signup.html"><button id="join"><i class="fas fa-camera-retro"></i> Sign Up</button></a>	
+		<a href="signup.html"><button id="signup"><i class="fas fa-camera-retro"></i> Sign Up</button></a>	
 	</main>
 
 	<script src="js/skript.js"></script> 

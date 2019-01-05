@@ -27,8 +27,8 @@ p{
 
 nav{
 	width:100%;
+	height:50px;
 	background-color:#ff8084;
-
 }
 header{
 	width:100%;
@@ -40,19 +40,14 @@ header{
 	margin:10px;
 }
 .mainhome{			/* Main container style in home page. */
-	display:block;
-	float:none;
-	max-width:100%;
 	padding-top:30vh;
-	min-height: 92vh;
-	text-align:center;
+	display:flex;
+	flex-wrap:wrap;
 }
 .mainsec{			/* Main container style in secondary pages. */
-	overflow:hidden;
 	padding:10px;
 	display:flex;
 	flex-wrap:wrap;
-	vertical-align:top;
 }
 div.artist{			/* Container for text and images in pages like "Fund" or "Artists". */
 	text-align:center;
@@ -79,33 +74,31 @@ div#second{			/* Second part of the nav, with links to other pages. */
 	font-size: 1.1rem;	
 }
 
-a{					
-	display:inline-block;
+a{	
+	display:block;				
 	width:100%;
-	height: 100%;
-	text-decoration:none;
+	height:50px;
 	line-height:50px;
 	text-align:center;
+	text-decoration:none;
 }
-.dropdown{             /* Secondary dropdowns. */          
+.dropdown{             		/* Secondary dropdowns. */          
 	position:relative;
 	z-index:100;
-}
-
-div#second div div{
 	background-color: #ffeaeb;
+	color:#ea6266;
 	border-radius: 5px;
-}
-div#second div, div#second a{
-	width:100%;
-	float:left;
-}
-div#second div div{
 	display:none;
 }
-div#second div div a{
+.dropdown a{
 	color:#ea6266;
 }
+.insecond{
+	display:inline-block;
+	float:left;
+	width:25%;
+}
+
 div#first a:hover{
 	font-size:1.45rem;
 }
@@ -115,34 +108,26 @@ div#second a:hover{
 }
 
 a#brand{			/* Logo link style */
-	width:100%;
 	float:left;
 }
-a#brand>img{		/* Icon inside it */
-	display:inline;
-	width:30px;
-	height:30px;
-	vertical-align: middle;
-}
+
 a#toggle{			/* Toggle button */
-	text-align:center;
 	display:none;
 	float:left;
 }
 
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
 .title{				/* Home page Title */
 	font-size:3.4em;
+	margin:auto;
 }
 
 .subtitle{
 	font-size:2em;
-	margin-top:10px;	
+	padding-top:10px;	
+}
+.title, .subtitle{
+	margin:auto;
+	text-align: center;
 }
 
 hr{
@@ -166,7 +151,7 @@ button {
 button:hover{
     background-color: #ff8084;
 }
-button#join:active, button#join:focus{
+button#signup:active, button#signup:focus{
 	outline:none;
 }
 
@@ -215,7 +200,7 @@ div.centered{
 	justify-content:space-around;
 }
 
-img.gallery{		/* Gallery image style. */
+img.gallery{			/* Gallery image style. */
 	display:inline-block;
 	vertical-align:top;
 	width:49%;
@@ -236,55 +221,16 @@ img.gallery{		/* Gallery image style. */
 
 /* Different screen size styles. */
 /*********************************************************(3)*/
-@media only screen and (min-width: 1024px) {
-	div#second {
-		max-width:720px;
-		float:right;
-		font-size:1.15rem;
-	}
-	div#second a:hover{
-		font-size:1.3rem;
-	}
-	div#second>a, div#second>div{
-		width:25%;
-	}
-	nav{
-		height:50px;
-	}
-}
-
-@media only screen and (min-width: 700px) {		
-	div#second>a, div#second>div{
-		width:25%;
-	}
-	div#second{
-		height:50px;
-	}	
-}
 
 @media only screen and (max-width: 1024px) {
-    hr{
-    	min-width:34em;
-		max-width: 90vw;
-    }
-
-	div.artist{
-		width:calc(50% - 20px);
-	}
-
-    .mainhome{
-    	padding-left:3vw;
-    	padding-right:3vw;
-    }
-
-    div#first{
+	div#first, div#second{
     	width:100%;
     }
 
     div#second{
-    	width:100%;
     	display:none;
     	border-top: 1px solid #ffeaeb;
+    	background-color:#ff8084;
     }
 
     a#brand{
@@ -296,17 +242,23 @@ img.gallery{		/* Gallery image style. */
     	max-width:12%;   
  	}
 
+	.mainhome{
+    	padding-left:3vw;
+    	padding-right:3vw;
+    }
+    hr{
+    	min-width:34em;
+		max-width: 90vw;
+    }
     .title{
 		font-size:3em;
 	}
-
 	.subtitle{
 		font-size:1.8em;
 		margin-top:5px;	
 	}
-
-	button#join {
-    	font-size: 1.6rem;
+	button#signup {
+    	font-size: 1.5em;
     	margin: 20px auto;
     	padding: 5px 25px;
 	}
@@ -318,33 +270,29 @@ img.gallery{		/* Gallery image style. */
 	.signupimg{
 		display:none;
 	}
+
+	div.artist{
+		width:calc(50% - 20px);
+	}
 }
 
-@media only screen and (max-width: 700px) {
-	div.artist{
-		width:calc(100% - 20px);
+@media only screen and (max-width: 650px) {
+	div#second{
+		height:auto;
 	}
 
-	div.centered{
-		width:75%;
+	.insecond{
+		width:100%;
+		background-color:#ff8084;
 	}
 
-	p{
+	p{			/* Font size in .artist and .centered */
 		font-size:1.2em;
 	}
 
 	hr{
 	   	max-width:80vw;
     	min-width: 90vw;
-    }
-
-    a#brand{
-    	max-width:84%;
-    }
-
-    a#toggle{
-    	display:block;
-    	max-width:16%;	
     }
 
     div#first{
@@ -354,23 +302,27 @@ img.gallery{		/* Gallery image style. */
     	font-size:1.2rem;
     }
 
-    div#second div, div#second a{
- 		width:100%;
- 	}
-
     .title{
-		font-size:1.8rem;
+		font-size:2.5em;
 	}
 
 	.subtitle{
-		font-size:1.3rem;
+		font-size:1.5em;
 		margin-top:5px;	
 	}
 
-	button#join {
-    	font-size: 1.2rem;
+	button#signup {
+    	font-size: 1.3em;
     	margin-top: 20px;
     	padding: 7px 20px;
+	}
+
+	div.centered{
+		width:75%;
+	}
+
+	div.artist{
+		width:calc(100% - 20px);
 	}
 }
 /********************************************************(3)*/
