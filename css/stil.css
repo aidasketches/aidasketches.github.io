@@ -39,22 +39,6 @@ header{
 	text-align: center;
 	margin:10px;
 }
-.mainhome{			/* Main container style in home page. */
-	padding-top:30vh;
-}
-.mainsec{			/* Main container style in secondary pages. */
-	padding:10px;
-	display:flex;
-	flex-wrap:wrap;
-}
-div.artist{			/* Container for text and images in pages like "Fund" or "Artists". */
-	text-align:center;
-	padding:10px;
-	margin:10px;
-	width:calc(33.33% - 20px);
-	border:1px solid #ffeaeb;
-	border-radius:5px;
-}
 
 div#first{			/* First part of the nav, with brand logo. */
 	display:block;
@@ -180,6 +164,12 @@ label{
 }
 
 /* Additional style for other pages *********** (2)*/
+.mainsec{			/* Main container style in secondary pages. */
+	padding:10px;
+	display:flex;
+	flex-wrap:wrap;
+}
+
 .cont-cent{				/* Container of the flexible divs */
 	width:100%;
 	display:flex;
@@ -187,6 +177,7 @@ label{
 	align-items: center;
 	flex-wrap:wrap;
 	height: calc(100% - 50px);
+
 }
 div.centered{			/* Contact page central div */
 	width: 35%;
@@ -198,6 +189,15 @@ div.centered{			/* Contact page central div */
 
 .signup{				/* Login and Signup pages' centered div */
 	justify-content:space-around;
+}
+
+div.artist{			/* Artists and Fund div */
+	text-align:center;
+	padding:10px;
+	margin:10px;
+	width:calc(33.33% - 20px);
+	border:1px solid #ffeaeb;
+	border-radius:5px;
 }
 
 img.gallery{			/* Gallery image style. */
@@ -331,11 +331,7 @@ img.gallery{			/* Gallery image style. */
 	    padding: 6px 14px;
 	}
 
-	div.centered{
-		width:75%;
-	}
-
-	div.artist{
+	div.artist, div.centered{
 		width:calc(100% - 20px);
 	}
 
