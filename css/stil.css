@@ -220,7 +220,7 @@ p{
 /* Different screen size styles. */
 /***********************************************(3)*/
 
-@media only screen and (max-width: 1024px) and (orientation:landscape){
+@media only screen and (max-width: 1024px) {
 	a#brand{
 		max-width:88%;
 	}
@@ -268,7 +268,7 @@ p{
 	}
 }
 
-@media only screen and (max-width: 650px) and (orientation:portrait){
+@media only screen and (max-width: 650px) {
 	a#brand{
 		max-width:85%;
 	}
