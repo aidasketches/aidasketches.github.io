@@ -179,7 +179,7 @@ div.centered{			/* Contact, Login and Signup page div */
 }
 .homecentered{			/* Home page centered div */
 	min-width:95%;
-	padding:0 10px;
+	padding:20px 5px;
 }
 
 .signup{				/* Login and Signup pages' addition */
@@ -309,12 +309,19 @@ p{
     }
 
     .title{
-		font-size:2.5em;
+		font-size:2.4em;
 	}
 
 	.subtitle{
 		font-size:1.5em;
 		margin-top:5px;	
+	}
+
+	h1{
+		font-size:1.8em;
+	}
+	h2{
+		font-size:1.4em;
 	}
 
 	hr{
@@ -329,10 +336,6 @@ p{
 
 	button[type="submit"] {
 	    padding: 6px 14px;
-	}
-
-	h1,h2{
-		transform:scale(0.9,0.9);
 	}
 
 	div.centered{
