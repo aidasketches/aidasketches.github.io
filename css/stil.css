@@ -165,7 +165,6 @@ label{
 
 /* Additional style for other pages *********** (2)*/
 .mainsec{			/* Main container style in secondary pages. */
-	width:100%;
 	padding:10px;
 	display:flex;
 	flex-wrap:wrap;
