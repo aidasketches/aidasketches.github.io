@@ -164,11 +164,6 @@ label{
 }
 
 /* Additional style for other pages *********** (2)*/
-.mainsec{			/* Main container style in secondary pages. */
-	padding:10px;
-	display:flex;
-	flex-wrap:wrap;
-}
 
 .cont-cent{				/* Container of the flexible divs */
 	width:100%;
@@ -176,10 +171,9 @@ label{
 	justify-content:center;
 	align-items: center;
 	flex-wrap:wrap;
-	height: calc(100% - 50px);
-
+	min-height: calc(100% - 50px);
 }
-div.centered{			/* Contact page central div */
+div.centered{			/* Contact, Login and Signup page div */
 	width: 35%;
 	position:relative;
 }
@@ -187,16 +181,16 @@ div.centered{			/* Contact page central div */
 	min-width:95%;
 }
 
-.signup{				/* Login and Signup pages' centered div */
+.signup{				/* Login and Signup pages' addition */
 	justify-content:space-around;
 }
 
-div.artist{			/* Artists and Fund div */
+div.artist{			/* Artists, Fund and alike pages' div */
 	text-align:center;
 	padding:10px;
 	margin:10px;
 	width:calc(33.33% - 20px);
-	border:1px solid #ffeaeb;
+	border:1px solid #ff8084;
 	border-radius:5px;
 }
 
