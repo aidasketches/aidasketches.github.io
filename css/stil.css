@@ -129,7 +129,7 @@ a#toggle{			/* Toggle button */
 }
 
 hr{
-	width:38em;
+	width:60%;
 	margin:auto;
 	margin-top:1em;
 }
@@ -155,14 +155,12 @@ button#signup:active, button#signup:focus{
 
 /* -------------------Forms' style-------------------------- */
 
-input[type=text], input[type=password], input[type=email] {
+input{
 	color:black;
     width: 100%;
     padding: 12px 20px;
     border: 1px solid #ccc;
     border-radius:5px;
-    
-    background-color:#ffeaeb;
 }
 input:hover{
 	background-color:#ffeaeb;
@@ -181,8 +179,8 @@ label{
 	box-sizing: border-box;
 }
 
-/* Additional style for all pages but homepage. (2)*/
-.cont-cent{			/* Container of the flexible divs */
+/* Additional style for other pages *********** (2)*/
+.cont-cent{				/* Container of the flexible divs */
 	width:100%;
 	display:flex;
 	justify-content:center;
@@ -190,11 +188,15 @@ label{
 	flex-wrap:wrap;
 	height: calc(100% - 50px);
 }
-div.centered{
+div.centered{			/* Contact page central div */
 	width: 35%;
 	position:relative;
 }
-.signup{
+.homecentered{			/* Home page centered div */
+	min-width:95%;
+}
+
+.signup{				/* Login and Signup pages' centered div */
 	justify-content:space-around;
 }
 
@@ -218,9 +220,9 @@ img.gallery{			/* Gallery image style. */
 }
 
 /* Different screen size styles. */
-/*********************************************************(3)*/
+/***********************************************(3)*/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (orientation:landscape){
 	div#first, div#second{
     	width:100%;
     }
@@ -240,14 +242,10 @@ img.gallery{			/* Gallery image style. */
     	max-width:12%;   
  	}
 
-	.mainhome{
-    	padding-left:3vw;
-    	padding-right:3vw;
-    }
-    hr{
-    	min-width:34em;
-		max-width: 90vw;
-    }
+ 	hr{
+ 		width:80%;
+ 	}
+
     .title{
 		font-size:3em;
 	}
@@ -262,7 +260,7 @@ img.gallery{			/* Gallery image style. */
 	}
 
 	div.centered{
-		width:50%;
+		width:60%;
 	}
 
 	.signupimg{
@@ -274,12 +272,16 @@ img.gallery{			/* Gallery image style. */
 	}
 }
 
-@media only screen and (max-width: 650px) {
-	.mainhome{			/* Main container style in home page. */
-		padding-top:25vh;
-		display:flex;
-		flex-wrap:wrap;
-	}
+@media only screen and (max-width: 650px) and (orientation:portrait){
+	div#first, div#second{
+    	width:100%;
+    }
+
+    div#second{
+    	display:none;
+    	border-top: 1px solid #ffeaeb;
+    	background-color:#ff8084;
+    }
 
 	a#brand{
 		max-width:85%;
@@ -303,11 +305,6 @@ img.gallery{			/* Gallery image style. */
 		font-size:1.2em;
 	}
 
-	hr{
-	   	max-width:80vw;
-    	min-width: 90vw;
-    }
-
     div#first{
     	font-size: 1.3rem;
     }
@@ -327,7 +324,11 @@ img.gallery{			/* Gallery image style. */
 	button#signup {
     	font-size: 1.3em;
     	margin-top: 20px;
-    	padding: 7px 20px;
+    	padding: 6px 18px;
+	}
+
+	button[type="submit"] {
+	    padding: 6px 14px;
 	}
 
 	div.centered{
@@ -337,5 +338,12 @@ img.gallery{			/* Gallery image style. */
 	div.artist{
 		width:calc(100% - 20px);
 	}
+
+	.signupimg{
+		display:none;
+	}
+
+	input{
+		padding:10px 14px;
+	}
 }
-/********************************************************(3)*/
