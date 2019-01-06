@@ -179,6 +179,7 @@ div.centered{			/* Contact, Login and Signup page div */
 }
 .homecentered{			/* Home page centered div */
 	min-width:95%;
+	padding:0 10px;
 }
 
 .signup{				/* Login and Signup pages' addition */
@@ -203,6 +204,9 @@ img.gallery{			/* Gallery image style. */
 	text-align:top;
 	height:auto;
 }
+p{
+	text-align:justify;
+}
 /***********************************************(2)*/
 
 ::selection {
@@ -216,7 +220,15 @@ img.gallery{			/* Gallery image style. */
 /* Different screen size styles. */
 /***********************************************(3)*/
 
-@media only screen and (max-width: 1024px) and (orientation:landscape){
+@media only screen and (max-width: 1024px) {
+	a#brand{
+		max-width:88%;
+	}
+    a#toggle{
+    	display:block;
+    	max-width:12%;   
+ 	}
+
 	div#first, div#second{
     	width:100%;
     }
@@ -227,19 +239,6 @@ img.gallery{			/* Gallery image style. */
     	background-color:#ff8084;
     }
 
-    a#brand{
-		max-width:88%;
-	}
-
-    a#toggle{
-    	display:block;
-    	max-width:12%;   
- 	}
-
- 	hr{
- 		width:80%;
- 	}
-
     .title{
 		font-size:3em;
 	}
@@ -247,6 +246,9 @@ img.gallery{			/* Gallery image style. */
 		font-size:1.8em;
 		margin-top:5px;	
 	}
+	hr{
+ 		width:80%;
+ 	}
 	button#signup {
     	font-size: 1.5em;
     	margin: 20px auto;
@@ -266,7 +268,16 @@ img.gallery{			/* Gallery image style. */
 	}
 }
 
-@media only screen and (max-width: 650px) and (orientation:portrait){
+@media only screen and (max-width: 650px) {
+	a#brand{
+		max-width:85%;
+	}
+
+    a#toggle{
+    	display:block;
+    	max-width:15%;   
+ 	}
+
 	div#first, div#second{
     	width:100%;
     }
@@ -276,15 +287,6 @@ img.gallery{			/* Gallery image style. */
     	border-top: 1px solid #ffeaeb;
     	background-color:#ff8084;
     }
-
-	a#brand{
-		max-width:85%;
-	}
-
-    a#toggle{
-    	display:block;
-    	max-width:15%;   
- 	}
 
 	div#second{
 		height:auto;
@@ -315,6 +317,10 @@ img.gallery{			/* Gallery image style. */
 		margin-top:5px;	
 	}
 
+	hr{
+ 		width:90%;
+ 	}
+
 	button#signup {
     	font-size: 1.3em;
     	margin-top: 20px;
@@ -323,6 +329,10 @@ img.gallery{			/* Gallery image style. */
 
 	button[type="submit"] {
 	    padding: 6px 14px;
+	}
+
+	h1,h2{
+		transform:scale(0.9,0.9);
 	}
 
 	div.centered{
